@@ -16,7 +16,7 @@
 
 5- sécuriser une machine (serveur/perso)
 
-6- laod-balancer avec iptables (fun)
+6- load-balancer avec iptables (fun)
 
 
 

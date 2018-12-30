@@ -4,26 +4,21 @@
 -> Principales options <-
 =========
 
+<br>
+* -L : liste les règles (--line-numbers : numéros de règles)
+* -t : type (NAT...)
 
-
-
-* -L : liste les règles
-
-
-
-
+<br>
 -> Type d'actions chaines/règles  <-
-
-
 
 Actions sur les chaines : INPUT / OUTPUT / FORWARD
 en majuscules
 
 * -A : ajout de règle à une chaine (-A INPUT)
 
-* -D : suppression de règle (-R INPUT 1 - numéro de la règle dans la chaine INPUT )
+* -D : suppression de règle (-D INPUT 1 - numéro de la règle dans la chaine INPUT )
 
-* -R : remplace la règle
+* -R : remplace la règle (-R INPUT)
 
 * -I : insertion d'une règle (sans chiffre au début de la chaine (ex: INPUT 1)
 
@@ -56,10 +51,9 @@ en majuscules
 
 * --sport 80 : un port
 
-* -m multiport --sport 80,443 : plsueirus ports
+* -m multiport --sport 80,443 : plusieurs ports
 
 * -t : type (NAT...)
-
 
 
 
