@@ -4,6 +4,7 @@
 -> Sécuriser une machine avec iptable <-
 ========
 
+<br>
 * sécurisation réseau (les principes)
 	- ce ne sont que des principes
 	- on refuse tout (entrants/sortants)
@@ -47,7 +48,7 @@ Rq : -A = ajout de la règle à la fin (les règles sont prises dans l'ordre)
 -> Redéfinition des tables <-
 
 
-* on vire les pings
+* on accepte les pings
 
 ```
 iptables -t filter -A INPUT -p icmp -j ACCEPT
