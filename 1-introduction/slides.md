@@ -1,8 +1,29 @@
 %title: iptables
 %author: xavki
 
--> IPTABLES : intérêt <-
+-> IPTABLES : sommaire <-
 =========
+
+
+
+1- introduction & notions
+
+2- options 
+
+3- premiers DROP (ping)
+
+4- adresses ip et ports
+
+5- sécuriser une machine (serveur/perso)
+
+6- laod-balancer avec iptables (fun)
+
+
+
+---------------------------------------------------------------------------
+
+-> IPTABLES : intérêt <-
+
 
 * firewall : parefeu = sécurité
 	- filtrage ip
@@ -23,6 +44,8 @@ sudo apt-get install iptables
 
 -> Tables <-
 
+
+
 * la table NAT :
 	- translation de ports et d'ip
 	- deux localisations :
@@ -32,6 +55,12 @@ sudo apt-get install iptables
 		- DNAT : IP de destination
 		- SNAT : IP source
 		- MASQUERADE : simule une gateway
+
+-----------------------------------------------------------------------------
+
+-> Tables <-
+
+
 
 * la table filter :
 	- 3 chaines :
@@ -44,6 +73,12 @@ sudo apt-get install iptables
 		- REJECT : rejet avec retour à l'expéditeur
 		- DENY
 		... LOG : logger les paquets sur la sortie standard
+
+-----------------------------------------------------------------------------
+
+-> Tables <-
+
+
 
 * la table mangle : modification des paquets
 	- 5 targets :
