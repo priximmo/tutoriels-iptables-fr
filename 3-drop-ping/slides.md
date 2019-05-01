@@ -18,11 +18,13 @@
 - on travaille sur 172.17.0.2
 
 <br>
+
 ```
 iptables -I INPUT -p icmp --icmp-type 8 -j DROP
 ```
 
-Listons les règles: 
+Listons les règles:
+
 ```
 iptables -L
 ```
