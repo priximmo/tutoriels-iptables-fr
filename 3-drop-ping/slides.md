@@ -20,7 +20,10 @@
 <br>
 ```
 iptables -I INPUT -p icmp --icmp-type 8 -j DROP
+```
 
+Listons les règles: 
+```
 iptables -L
 ```
 
