@@ -5,6 +5,8 @@
 ========
 
 <br>
+
+
 * Empêcher les pings en entrée
 
 ```
@@ -18,6 +20,8 @@
 - on travaille sur 172.17.0.2
 
 <br>
+
+
 
 ```
 iptables -I INPUT -p icmp --icmp-type 8 -j DROP
@@ -34,6 +38,8 @@ type 8 =  "Echo Request" pour le ping réseau
 -I : ajoute les règles au début de la table
 
 <br>
+
+
 	- suppression des règles
 
 ```

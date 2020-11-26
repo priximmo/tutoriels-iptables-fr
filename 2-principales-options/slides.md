@@ -5,10 +5,14 @@
 =========
 
 <br>
+
+
 * -L : liste les règles (--line-numbers : numéros de règles)
 * -t : type (NAT...)
 
 <br>
+
+
 -> Type d'actions chaines/règles  <-
 
 Actions sur les chaines : INPUT / OUTPUT / FORWARD

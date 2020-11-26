@@ -9,6 +9,8 @@
 * en cas de perte cela peut être difficile à refaire
 
 <br>
+
+
 * sauvegarde
 
 ```
@@ -17,6 +19,8 @@ iptables-save > /etc/sav-iptables.rules
 
 
 <br>
+
+
 * restauration
 
 ```
@@ -33,6 +37,8 @@ iptables-restore < /etc/sav-iptables.rules
 * idée : charger les règles dès la première connexion réseau (eth0)
 
 <br>
+
+
 ```
 pre-up iptables-restore < /etc/sav-iptables.rules
 ```
